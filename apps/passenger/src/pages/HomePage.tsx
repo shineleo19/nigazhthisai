@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Spinner, useToast } from "@sbt/ui";
 import type { Stop, Route } from "@sbt/shared-types";
@@ -762,9 +762,11 @@ export function HomePage() {
 
         {/* Center: Nigalthisai Logo + Title + Dynamic Greeting */}
         <div className="flex items-center gap-2">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#0a192f] p-1.5 shadow-xs text-white">
-            <Bus className="h-5 w-5 text-emerald-400" />
-          </div>
+          <img
+            src="/brand-logo-original.png"
+            alt="Nigalthisai logo"
+            className="h-9 w-9 shrink-0 rounded-xl border border-slate-200 bg-white object-contain shadow-xs"
+          />
           <div className="flex flex-col text-left">
             <h1 className="text-xs font-black tracking-wider text-[#0a192f] uppercase leading-none">
               NIGALTHISAI
